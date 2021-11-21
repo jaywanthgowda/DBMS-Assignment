@@ -1,6 +1,15 @@
 #!/usr/bin/python
 from configparser import ConfigParser
 
+"""
+    Requires database.ini file with format:
+    [postgresql]
+    host=<localhost>
+    database=<dbname>
+    user=<postgres>
+    password=<password>
+"""
+
 def config(filename='database.ini', section='postgresql'):
     # create a parser
     parser = ConfigParser()
